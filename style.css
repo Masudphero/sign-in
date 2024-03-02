@@ -6,7 +6,7 @@
 }
 body{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     min-height: 100vh;
     background: url("sumon.jpg") no-repeat;
@@ -108,4 +108,45 @@ body{
 
 .register-link p a:hover {
     text-decoration: underline;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151515;
+}
+.circl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #fe444425;
+    border-top: 3px solid red;
+    animation: ani 3s linear infinite;
+}
+.circle2{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #fee84442;
+    border-top: 3px solid #f9ce24;
+    animation: ani 2s linear infinite;
+}
+@keyframes ani {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
